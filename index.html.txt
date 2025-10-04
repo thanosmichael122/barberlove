@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasteBuds Restaurant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #c0392b;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #e74c3c;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .hero {
+      background: url('https://picsum.photos/1200/500?food') no-repeat center center/cover;
+      color: white;
+      padding: 6rem 2rem;
+    }
+    .menu-item {
+      margin: 1rem 0;
+    }
+    footer {
+      background: #c0392b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, textarea {
+      margin: 0.5rem 0;
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #c0392b;
+      color: white;
+      border: none;
+      padding: 0.7rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to TasteBuds Restaurant</h1>
+    <p>Delicious food, made fresh every day</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="hero">
+    <h2>Fresh • Local • Tasty</h2>
+    <p>Join us for an unforgettable dining experience.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+      <h3>🍕 Margherita Pizza - $12</h3>
+      <p>Classic pizza with mozzarella, basil, and tomato sauce.</p>
+    </div>
+    <div class="menu-item">
+      <h3>🍝 Spaghetti Carbonara - $15</h3>
+      <p>Rich pasta with pancetta, eggs, and parmesan.</p>
+    </div>
+    <div class="menu-item">
+      <h3>🥗 Caesar Salad - $10</h3>
+      <p>Crisp romaine, parmesan, and croutons tossed in Caesar dressing.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mnqkwxyz" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TasteBuds Restaurant. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
